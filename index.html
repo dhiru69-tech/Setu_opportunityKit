@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpportunityKit — Student Opportunity Discovery & Eligibility Platform</title>
+    <meta name="description" content="Student Opportunity Discovery and Eligibility Platform to discover internships, scholarships, research, and hackathons, assess eligibility, and track applications." />
+    <meta property="og:title" content="OpportunityKit — Student Opportunity Discovery & Eligibility Platform" />
+    <meta property="og:description" content="Student Opportunity Discovery and Eligibility Platform to discover internships, scholarships, research, and hackathons, assess eligibility, and track applications." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Ignore WebSocket and HMR errors per environment constraints
+      window.addEventListener('unhandledrejection', function(event) {
+        if (
+          event.reason &&
+          (typeof event.reason.message === 'string' && (event.reason.message.includes('WebSocket') || event.reason.message.includes('ws')) ||
+           typeof event.reason.stack === 'string' && event.reason.stack.includes('@vite/client'))
+        ) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        if (
+          typeof event.message === 'string' && event.message.includes('WebSocket') ||
+          typeof event.filename === 'string' && event.filename.includes('@vite/client')
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "OpportunityKit",
+  "description": "Student Opportunity Discovery and Eligibility Platform to discover internships, scholarships, research, and hackathons, assess eligibility, and track applications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
